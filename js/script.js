@@ -8,10 +8,10 @@
 
 
 var studente = {
-    nome: 'Chanel',
-    cognome: 'Secundo',
-    work: 'studente',
-    telefono: 3334657843,
+    nome: 'Alessandro',
+    cognome: 'Ciancio',
+    work: 'studente e cuoco in nave',
+    telefono: 3477595436,
     age: 41,
 
 
@@ -24,12 +24,14 @@ var studente = {
 for (var key in studente) {
 
     var datoStudente = studente[key];
-    console.log(key + " : " + datoStudente);
+    console.log(key + " : " + datoStudente); //per visione in consol.log
+
+
+    document.getElementById('exit').innerHTML += "<li>" + key + ": " +
+        datoStudente + "</li> ";
 
 
 
 
 
 };
-
-document.getElementById('exit').innerHTML = "<li>" + datoStudente + "</li>";
