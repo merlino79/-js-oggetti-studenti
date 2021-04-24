@@ -56,7 +56,7 @@ var studenti = [{
     },
     {
         nome: 'fransco',
-        cognome: 'Amendola',
+        cognome: 'Amesondola',
         eta: 25,
     },
     {
@@ -67,7 +67,7 @@ var studenti = [{
     {
         nome: 'Miriana',
         cognome: 'Morandi',
-        eta: 45,
+        eta: 37,
 
     },
 
@@ -91,8 +91,13 @@ for (var datiStudenti of studenti) {
         console.log(
             key2 + ' : ' + datiStudenti[key2]);
     }
+    var nuovoDato = datiStudenti[key2];
+    document.getElementById('lista').innerHTML += "<li>" + nuovoDato +
+        "</li> ";
+
 
 };
+
 
 //funzione
 
@@ -108,5 +113,3 @@ function addUtente(target, nome, cognome, eta, ) {
 
 
 }
-document.getElementById('lista').innerHTML += "<li>" + key2 + addUtente +
-    "</li> ";
