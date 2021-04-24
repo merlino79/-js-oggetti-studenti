@@ -10,7 +10,7 @@
 var studente = {
     nome: 'Alessandro',
     cognome: 'Ciancio',
-    work: 'studente e cuoco in nave',
+    work: 'studente boolean, e cuoco in nave',
     telefono: 3477595436,
     age: 41,
 
@@ -27,11 +27,41 @@ for (var key in studente) {
     console.log(key + " : " + datoStudente); //per visione in consol.log
 
 
-    document.getElementById('exit').innerHTML += "<li>" + key + ": " +
-        datoStudente + "</li> ";
+    document.getElementById('exit').innerHTML += "<li>" + key + ": " + datoStudente + "</li> ";
+
 
 
 
 
 
 };
+
+var studenti = [{
+        nome: 'serena',
+        cognome: 'Dilauro',
+        eta: 45,
+
+
+
+    },
+    {
+        nome: 'fransco',
+        cognome: 'Amendola',
+        eta: 25,
+    },
+    {
+        nome: 'marco',
+        cognome: 'Chiarentin',
+        eta: 40,
+    },
+    {
+        nome: 'Miriana',
+        cognome: 'Morandi',
+        eta: 45,
+
+    },
+
+];
+
+
+console.log(studenti);
