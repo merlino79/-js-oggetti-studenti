@@ -35,6 +35,7 @@ for (var key in studente) {
 
 
 };
+console.log('<----------------->')
 
 var studenti = [{
         nome: 'serena',
@@ -64,4 +65,12 @@ var studenti = [{
 ];
 
 
+
 console.log(studenti);
+
+for (var datiStudenti of studenti) {
+    for (key2 in datiStudenti) {
+        console.log(
+            key2 + ' : ' + datiStudenti[key2]);
+    }
+};
