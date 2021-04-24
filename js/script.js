@@ -78,7 +78,6 @@ var nuovoCognome = prompt('inserisci il cognome');
 var nuovoEta = parseInt(prompt('inserire eta'));
 
 addUtente(studenti, nuovoNome, nuovoCognome, nuovoEta);
-document.getElementById('lista').innerHTML += "<li>" + addUtente + "</li> ";
 
 
 
@@ -92,6 +91,7 @@ for (var datiStudenti of studenti) {
         console.log(
             key2 + ' : ' + datiStudenti[key2]);
     }
+
 };
 
 //funzione
@@ -105,4 +105,8 @@ function addUtente(target, nome, cognome, eta, ) {
     });
 
 
+
+
 }
+document.getElementById('lista').innerHTML += "<li>" + key2 + addUtente +
+    "</li> ";
