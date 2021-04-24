@@ -21,6 +21,8 @@ var studente = {
 
 //console.log(users);
 
+// ciclo in 
+
 for (var key in studente) {
 
     var datoStudente = studente[key];
@@ -35,8 +37,15 @@ for (var key in studente) {
 
 
 };
+
+
+
+
+//ciclo in con stampa in html
+
 console.log('<----------------->')
 
+// creazione studenti
 var studenti = [{
         nome: 'serena',
         cognome: 'Dilauro',
@@ -64,9 +73,18 @@ var studenti = [{
 
 ];
 
+var nuovoNome = prompt('inserisci il nome');
+var nuovoCognome = prompt('inserisci il cognome');
+var nuovoEta = parseInt(prompt('inserire eta'));
+
+addUtente(studenti, nuovoNome, nuovoCognome, nuovoEta);
+
+
 
 
 console.log(studenti);
+
+//ciclo for of e in 
 
 for (var datiStudenti of studenti) {
     for (key2 in datiStudenti) {
@@ -74,3 +92,16 @@ for (var datiStudenti of studenti) {
             key2 + ' : ' + datiStudenti[key2]);
     }
 };
+
+//funzione
+
+function addUtente(target, nome, cognome, eta, ) {
+    target.push({
+        nome: nome,
+        cognome: cognome,
+        eta: eta,
+
+    });
+
+
+}
