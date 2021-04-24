@@ -78,6 +78,7 @@ var nuovoCognome = prompt('inserisci il cognome');
 var nuovoEta = parseInt(prompt('inserire eta'));
 
 addUtente(studenti, nuovoNome, nuovoCognome, nuovoEta);
+document.getElementById('lista').innerHTML += "<li>" + addUtente + "</li> ";
 
 
 
